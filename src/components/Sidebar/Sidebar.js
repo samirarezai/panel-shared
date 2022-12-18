@@ -197,6 +197,7 @@ const Sidebar = (props = {
                              <ExwinoIcon icon="close-circle" classes="color-icon-default"/>
                         </span>
                         </span>
+
                 </button>
             </Drawer>
         )}
