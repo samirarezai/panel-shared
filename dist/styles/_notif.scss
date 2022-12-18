@@ -1,0 +1,62 @@
+.style-notification {
+  border-radius: 10px;
+  position: relative;
+
+  .ant-notification-notice-content {
+    text-align: right;
+    color: #fff;
+  }
+
+  .ant-notification-notice-message {
+    color: #fff;
+  }
+
+  .anticon.ant-notification-notice-icon-error,
+  .anticon.ant-notification-notice-icon-success,
+  .anticon.ant-notification-notice-icon-info,
+  .anticon.ant-notification-notice-icon-warning {
+    color: #fff;
+  }
+
+  .ant-notification-notice-close {
+    top: 6px;
+    right: 0;
+    left: 9px;
+  }
+
+  .ant-notification-notice-icon {
+    margin-left: -18px;
+    font-size: 20px;
+  }
+
+  .ant-notification-notice-close {
+    color: #fff;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 76%;
+    background-color: #fff;
+    right: 0;
+    top: 13%;
+    border-radius: 12px;
+  }
+}
+
+.danger-notification {
+  background: #FF5E73;
+}
+
+.success-notification {
+  background: #19CB99;
+}
+
+.warning-notification {
+  background: #F6AB0D;
+}
+
+.info-notification {
+  background: #248fd7;
+}

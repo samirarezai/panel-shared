@@ -1,0 +1,24 @@
+.exwino {
+  font-size: 14px;
+  color: #7F8C9D;
+  vertical-align: middle;
+}
+
+.size-ex-xs{
+  font-size: 16px;
+}
+.size-ex-sm{
+  font-size: 18px;
+}
+.size-ex-md{
+  font-size: 22px;
+}
+.size-ex-lg{
+  font-size: 28px;
+}
+.size-ex-xl{
+  font-size: 48px;
+}
+.size-ex-xxl{
+  font-size: 64px;
+}

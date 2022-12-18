@@ -1,0 +1,112 @@
+@import "./colors";
+@import "./notif";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.routLayout{
+    background-color: $black;
+}
+// .btn-purple {
+//     background-color: $purple;
+//     color: #fff;
+//     border-color: $purple;
+//     border-radius: 1.1875rem !important;
+//     padding: 0.2rem 1.1rem !important;
+// }
+.breadcrumb {
+    background-color: $black;
+    margin-bottom   : 0;
+    padding-right   : 0;
+    padding-top     : 0;
+
+    .breadcrumb-item {
+        font-size: 14px;
+        text-shadow: none;
+        
+        &:first-child::before{
+            display: none;
+        }
+        &::before {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            padding-top: 0.1rem;
+            float: right;
+            color: $purple;
+            content: ">";
+        }
+
+        a {
+            text-decoration: none;
+            color          : $white;
+            font-size      : 13px;
+        }
+    }
+}
+
+table {
+    border-collapse: separate;
+    border-spacing : 0 .5rem;
+
+    thead {
+        background-color: $black;
+        color           : #fff;
+        font-size       : 13px Anjoman;
+    }
+
+    tr {
+        background-color: $black;
+        z-index: 10;
+        position: relative;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        .green-shadow{
+            position: absolute;
+            z-index: 0;
+            background-color: #174353;
+            width: 0;
+            height: 100%;
+            right: 0px;
+            top:0;
+        }
+        .red-shadow{
+            position: absolute;
+            z-index: 0;
+            background-color: #3A334D;
+            width: 0;
+            height: 100%;
+            right: 0px;
+            top:0;
+        }
+    }
+}
+
+.text-success {
+    color: $purple !important;
+}
+.text-danger {
+    color: $red !important;
+}
+.text-warning {
+    color: $yellow !important;
+}
+.text-secondary {
+    color: $text-secondary !important;
+}
+.text-success-green {
+    color: $green !important;
+}
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.form-control{
+    font-size: 14px!important;
+
+    &::placeholder{
+        font-size: 13px!important;
+
+    }
+}
+.form-control:disabled, .form-control[readonly] {
+    background-color: $gray-light!important;
+    opacity: 1;
+}

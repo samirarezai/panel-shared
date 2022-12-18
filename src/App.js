@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState} from "react";
+import {Layout, Header, Sidebar, ExwinoIcon} from "./components";
+import {ThemeProvider} from '@mui/material/styles';
+import theme from "./components/theme/theme";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [open, setOpen] = React.useState(true);
+    const [mobileOpen, setMobileOpen] = useState(false);
+
+    return (
+        <>
+            <ThemeProvider theme={theme}>
+                <Layout>
+                    <Header
+                        open={open}
+                        setOpen={setOpen}
+                        mobileOpen={mobileOpen}
+                        setMobileOpen={setMobileOpen}
+                    >
+                        my header
+                    </Header>
+                    <div style={{marginTop:'100px'}}>
+                        <ExwinoIcon icon="bag"/>
+                    </div>
+                    <Sidebar>
+                        my sidebar
+                    </Sidebar>
+                </Layout>
+            </ThemeProvider>
+        </>
+    );
 }
 
 export default App;
